@@ -1,4 +1,4 @@
-var images= [Swastik.jpg,Pooja.jpg,Ashish.jpg,Pramila.jpg,Ashok.jpg]
+var images= ["Swastik.jpg","Pooja.jpg","Ashish.jpg","Pramila.jpg","Ashok.jpg"];
 var names= [" Brother-Swastik Malani"," Mother-Pooja Maheshwari"," Father-Ashish Malani"," Grandmother-Pramila Malani","Grandfather-Ashok Malani"]
 
 var i = 0;
@@ -13,5 +13,5 @@ function update()
 var updatedImage= images[i];
 var updatedName= names[i];
 document.getElementById("family_member_image").src= updatedImage;
-document.getElementById("family_member_name").src= updatedName;
+document.getElementById("family_member_name").innerHTML= updatedName;
 }
